@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    font-size: 18px;
+    background-color: var(--dark-cyan);
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.circulo-1  {
+    position: relative;
+    left: 0px;
+    top: -400px;
+}
+
+.circulo-2  {
+    position: relative;
+    right: 0px;
+    top: 480px;
+}
+
+.card {
+    z-index: 1000;
+    background-color: white;
+    max-width: 360px;
+    max-height: 390px;
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 0px 20px 9px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+}
+
+.card-fundo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-info-pessoal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px hsla(0, 0%, 59%, 0.233);
+    margin-top: -58px;
+}
+
+.card-info-pessoal img {
+    border-radius: 50%;
+    border: solid 5px white;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.nome {
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.nome span {
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.cidade {
+    font-size: 0.8em;
+    color: var(--dark-grayish-blue);
+    margin: 10px auto;
+}
+
+.card-info-conta {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+
+.qntd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    gap: 5px;
+    margin: 25px 0;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.qntd span {
+    font-weight: 400;
+    font-size: 0.7em;
+    color: var(--dark-grayish-blue);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--very-dark-desaturated-blue);
+}
+
+@media (max-width: 370px) {
+
+    .card {
+        width: 300px;
+    }
+
+}
