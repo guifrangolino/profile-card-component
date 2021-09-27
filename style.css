@@ -129,13 +129,19 @@ main {
 footer {
     position: absolute;
     bottom: 0;
-    width: 300px;
+    width: 100vw;
     text-align: center;
 }
 
 footer a {
     text-decoration: none;
     color: var(--very-dark-desaturated-blue);
+}
+
+@media (max-width: 520px) {
+    footer {
+        width: 300px;
+    }
 }
 
 @media (max-width: 370px) {
